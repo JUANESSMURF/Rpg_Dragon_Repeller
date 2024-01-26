@@ -88,7 +88,7 @@ function buyHealth() {
         goldText.innerText = gold;
         healthText.innerText = health;
      } else {
-        text.innerText = "You do not have enough gold to buy health."
+        text.innerText = "You do not have enough gold to buy health.";
      }
 }
 
@@ -99,6 +99,7 @@ function buyWeapon() {
         goldText.innerText = gold;
         let newWeapon = weapons[currentWeapon].name;
         text.innerText = "You now have a " + newWeapon + ".";
+        inventory.push(newWeapon)
     }
 }
 
@@ -115,3 +116,4 @@ function fightBeast(){
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
+
